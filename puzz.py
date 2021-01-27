@@ -3,8 +3,9 @@ from itertools import *
 from more_itertools import *
 import enchant
 d = enchant.Dict("en_US")
+import math
  
-letters = []
+letters = [0, 15, 15, 20, 15, 5, 15]
 maxLength = 7
  
 while len(letters) < maxLength:
@@ -24,8 +25,8 @@ letterFive = letters[4]
 letterSix = letters[5]
 letterSeven = letters[6]
  
-letterNumber = {
-    0 : " abcd",
+letterNumber = {  #4 18 9 26 26 12 5
+    0 : "/abcd",
     1 : "abcde", 
     2 : "bcdef", 
     3 : "cdefg",
@@ -80,7 +81,7 @@ for each in result:
  
 wordList = (list(sliced(wordList, 7)))
  
-print('My list:', *wordList, sep='\n')
+#print('My list:', *wordList, sep='\n')
  
 print(f"Number of iterations: {counter:n}")
  
@@ -90,4 +91,19 @@ english_words = []
 for word in res:
     if d.check(word):
         english_words.append(word)
-print(f"Answer: {english_words}")
+#print(f"Possible answer(s): {english_words}")
+
+english_wordsLength = len(english_words)
+
+print(f"{english_wordsLength} possible answer(s):")
+
+def count_word(word): 
+    return sum(ord(c) - 96 for c in word) 
+#print(count_word(english_words[0]))
+
+#if english_wordsLength == 1:
+#    if count_word(english_words[0]) == 100:
+#        print(f"\n{english_words[0]} is equal to 100")
+
+for l in english_words:
+    print(l[0:])
