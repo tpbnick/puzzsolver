@@ -64,7 +64,7 @@ letterSeven = letterNumber[letterSeven]
    
  
 letterOne = letterOne[0], letterOne[1], letterOne[2], letterOne[3], letterOne[4]
-letterTwo = letterTwo[0], letterTwo[1], letterTwo[2], letterTwo[2], letterTwo[4]
+letterTwo = letterTwo[0], letterTwo[1], letterTwo[2], letterTwo[3], letterTwo[4]
 letterThree = letterThree[0], letterThree[1], letterThree[2], letterThree[3], letterThree[4]
 letterFour = letterFour[0], letterFour[1], letterFour[2], letterFour[3], letterFour[4]
 letterFive = letterFive[0], letterFive[1], letterFive[2], letterFive[3], letterFive[4]
